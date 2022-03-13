@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('phone')->unsigned();
-            $table->string('email', 254);
+            $table->string('email', 254)->charset("utf8");
             $table->timestamps();
         });
     }
